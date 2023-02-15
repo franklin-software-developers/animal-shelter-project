@@ -7,11 +7,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <style>
+
+        
+        #desktop-site-heading {
+            position: absolute;
+            width: 1440px;
+            height: 84px;
+            left: 0px;
+            top: 0px;
+
+            background: #FFFFFF;
+        }
+
+        h2 {
+            position: absolute;
+            width: 442px;
+            height: 335px;
+            left: 89px;
+            top: 230px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 130%;
+            color: #000000;}
+
+        #homepageAdopt {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+            font-family: 'Montserrat';
+
+            position: absolute;
+            width: 165px;
+            height: 68px;
+            left: 89px;
+            top: 579px;
+
+            background: #2678F3;
+            border-radius: 8px;
+        }
+
+        #homepageVolunteer {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+
+            position: absolute;
+            width: 257px;
+            height: 68px;
+            left: 274px;
+            top: 579px;
+
+            border: 3px solid #000000;
+            border-radius: 8px;
+        }
+
+        #black-rectangle-bar {
+            position: absolute;
+            width: 1440px;
+            height: 136px;
+            left: 0px;
+            top: 838px;
+
+            background: #000000;
+            mix-blend-mode: normal;
+        }
+
+        h3 {
+            position: absolute;
+            width: 432px;
+            height: 80px;
+            left: 59px;
+            top: 866px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 130%;
+            /* or 39px */
+
+            display: flex;
+            align-items: center;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            border: 1px solid #FFFFFF;
+        }
+
+        p {
+            position: absolute;
+            width: 1301px;
+            height: 328px;
+            left: 49px;
+            top: 1040px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+            color: #000000;
+        }
+        
+        footer {
+            position: absolute;
+            width: 314px;
+            height: 74px;
+            left: 104px;
+            top: 1985px;
+
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+
+            color: #000000;
+        }
+
+        #footer-rectangle {
+            position: absolute;
+            width: 1440px;
+            height: 74px;
+            left: 104px;
+            top: 1985px;
+
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
 <!-- SITEWIDE: Site Header -->
-<h1>FSD Animal Shelter</h1>
+<img id="desktop-site-heading" src="/img/16-desktop-site-heading.png" alt="desktop heading image">
 
 <!-- Header: "Welcome to FSD Animal Shelter, where every pet deserves a loving home."-->
 <h2>Welcome to FSD Animal Shelter, where every pet deserves a loving home.</h2>
@@ -22,8 +168,12 @@
 <!-- Button: "Volunteer" -->
 <button id="homepageVolunteer">Volunteer</button>
 
+<img id="black-rectangle-bar" src="/img/black-rectangle-6.png" alt="black-rectangle-6 image">
+
 <!-- Image: "dog-homepage.jpeg" -->
-<img src="/img/dog-homepage.jpeg" alt="dog-homepage image">
+<img id="dog-homepage-image" src="/img/dog-homepage.jpeg" alt="dog-homepage image">
+
+<h3>Why you should adopt:</h3>
 
 <!-- Article: "Why Adopt?" -->
 <p>- Save money while you save a life
@@ -32,6 +182,7 @@
     <br>- Contribute in the fight against factory-style breeding of pets
     <br>"Beyond just helping an animal in need, you're giving a rescue an opportunity to find their voice; to be themselves and get a second chance to become a dog beyond the walls of shelter or rescue. You truly give them the keys to start anew in a life where second chances can often be hard to come by" (ASPCA).
 </p>
+<img id="footer-rectangle" src="/img/footer-rectangle.png" alt="footer-rectangle image">   
 </body>
 </html>
 <!-- SITEWIDE: Footer -->
