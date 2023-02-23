@@ -1,13 +1,30 @@
+<html id="volunteer">
+<head>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+</head>
 <body>
-
+<div class="nav-bar">
+    <h3>FSD Animal Shelter</h3>
+    <ul>
+        <li><a>Adopt</a></li>
+        <li><a>Team</a></li>
+        <li><a>Contact</a></li>
+        <li><a id="volunteer-nav-bar">Volunteer</a></li>
+    </ul>
+</div>
 <!-- Set Up HTML File Structure -->
 <div id="main-heading">
-    <img id="main img" src = "../img/people-volunteerpage.jpg">
+    <div id="main-background-img-cropped">
+        <img id="main-background-img" src = "../img/people-volunteerpage.jpg">
+    </div>
     <!-- Header: "Your help will rescue and care for more homeless animals." -->
-    <h3>Your help will rescue and care for more homeless animals</h3>
+    <h3 class="big-bold">Your help will rescue and care for more homeless animals</h3>
 
     <!-- Header: "Volunteer Today!" -->
-    <h2>Volunteer Today!</h2>
+    <h2 class="red big-bold">Volunteer Today!</h2>
 </div>
 <!-- Label: "First Name" -->
 <label>First Name</label>
@@ -38,7 +55,22 @@
 
 <label name="position">Email</label>
 <input type="email" placeholder="example@domain.com">
-<!-- Button: "Submit" -->
+<br>
+
+<label>Street Address</label>
+<input type="text" placeholder="Street Address" required>
+
+<label>Apartment/Unit #</label>
+<input type="text" placeholder="Apartment/Unit #" required>
+
+<br>
+
+<label>City</label>
+<input type="text" placeholder="State" required>
+
+<label>Zip/Postal Code</label>
+<input type="text" placeholder="Zip/Postal Code" required>
+
 <br>
 <button>Submit</button>
 
@@ -82,3 +114,4 @@
     </select>
 -->
 </body>
+</html>

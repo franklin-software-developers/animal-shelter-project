@@ -10,3 +10,100 @@
 /* => Team Page */
 
 /* => Volunteer Page */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.red {
+    color: #FF0303;
+}
+
+.big-bold {
+    font-size: 64;
+    font-weight: 700px;
+}
+
+#volunteer {
+    background-color: white;
+    font-size: 17;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*navigation bar*/
+#main-background-img-cropped img {
+    fill-opacity: 40%;
+    position: relative;
+    z-index: -2;
+    width: 1731px;
+    left:-86px;
+}
+#main-background-img-cropped {
+    z-index: -1;
+    width: 1440px;
+    height: 791px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.nav-bar {
+    background-color: white;
+    width: 1440px;
+    height: 84px;
+    font-size: 20px;
+    padding:0;
+    margin:0;
+    border:0;
+    margin-bottom: 40px;
+}
+.nav-bar h3 {
+    position:relative;
+    font-weight: 900;
+    left:64px;
+    font-size:24px;
+    top:26px;
+    width:231px;
+    height:31px;
+    font-size:24px;
+}
+.nav-bar ul{
+    display: block;
+    float: right;
+    overflow: hidden;
+    list-style-type: none;
+    position: relative;
+    left:-40px;
+    overflow:visible;
+}
+.nav-bar ul li{
+    float: left;
+    padding-left: 0px;
+}
+#volunteer-nav-bar {
+    background: #2678F3;
+    position:relative;
+    color: white;
+}
+#volunteer-nav-bar:hover {
+    color:#2678F3;
+    background-color:#eee;
+}
+.nav-bar ul li a{
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    margin: 9px 16px;
+    left: 32px;
+    top: -18px;
+}
+.nav-bar ul li a:hover{
+    color:#2678F3;
+    background-color:#eee;
+}
