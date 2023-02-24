@@ -207,10 +207,10 @@
     top: 1401px;
 }
 #apartmentNumberLabel{
-    width: 172px;
-    height: 40px;
+    width: 145px;
+    height: 22px;
     left: 715px;
-    top: 1401px;    
+    top: 1369px;    
 }
 #cityInput{
     width: 366px;
@@ -275,7 +275,6 @@
     text-align:left;
     justify-content: flext-start;
 }
-/*navigation bar*/
 #main-background-img-cropped img {
     fill-opacity: 40%;
     position: relative;
@@ -290,6 +289,8 @@
     position: relative;
     overflow: hidden;
 }
+
+/*navigation bar*/
 .nav-bar {
     background-color: white;
     width: 1440px;
@@ -302,8 +303,10 @@
 }
 .nav-bar h3 {
     position:absolute;
+    font-family:nunito;
     font-weight: 900;
     left:64px;
+    font-weight: 900;
     font-size:24px;
     top:26px;
     width:231px;
@@ -333,6 +336,8 @@
     background-color:#eee;
 }
 .nav-bar ul li a{
+    font-size: 20;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     padding: 9px 16px;
     text-decoration: none;
@@ -351,4 +356,4 @@
 a:visited { 
     text-decoration: none; 
     color: inherit; 
-   }
+}
