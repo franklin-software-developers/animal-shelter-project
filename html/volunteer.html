@@ -1,5 +1,6 @@
 <html id="volunteer">
 <head>
+    <title>Volunteer</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,10 +10,11 @@
 <div class="nav-bar">
     <h3>FSD Animal Shelter</h3>
     <ul>
-        <li><a>Adopt</a></li>
-        <li><a>Team</a></li>
-        <li><a>Contact</a></li>
-        <li><a id="volunteer-nav-bar">Volunteer</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="volunteer.html" id="volunteer-nav-bar">Volunteer</a></li>
     </ul>
 </div>
 <!-- Set Up HTML File Structure -->
@@ -21,58 +23,73 @@
         <img id="main-background-img" src = "../img/people-volunteerpage.jpg">
     </div>
     <!-- Header: "Your help will rescue and care for more homeless animals." -->
-    <h3 class="big-bold">Your help will rescue and care for more homeless animals</h3>
+    <h3 id="volunteerMainHeadingText" class="big-bold">Your help will rescue and care for more homeless animals</h3>
 
     <!-- Header: "Volunteer Today!" -->
-    <h2 class="red big-bold">Volunteer Today!</h2>
+    <h2 id="volunteerHeading" class="red big-bold">Volunteer Today!</h2>
 </div>
 <!-- Label: "First Name" -->
-<label>First Name</label>
+<label id="firstNameLabel">First Name</label>
 
 <!-- Input: Textbox, Placeholder: "First Name", Required -->
-<input type="text" placeholder="First Name" required>
+<input id ="firstNameInput" class ="nameInput" type="text" placeholder="First Name" required>
 
 <!-- Repeat for rest; Look out for different input types -->
-<label>Middle Name</label>
-<input type="text" placeholder="Middle Name">
+<label id="middleNameLabel">Middle Name</label>
+<input id ="middleNameInput" type="text" class ="nameInput" placeholder="Middle Name">
 
-<label>Last Name</label>
-<input type="text" placeholder="Last Name" required>
+<label id="lastNameLabel">Last Name</label>
+<input id ="lastNameInput" type="text" class ="nameInput" placeholder="Last Name" required>
 <br>
 <div id="date-div">
-    <label>Date of Birth</label>
-    <input type="date">
+    <label id="dateLabel">Date of Birth</label>
+    <input id="monthInput" type="number" class="nameInput" placeholder="Month">
+    <input id="dayInput" type="number" class="nameInput" placeholder="Day">
+    <input id="yearInput" type="number" class="nameInput" placeholder="Year">
 </div>
 
-<label>Interested Position</label>
-<select name="position" required>
+<label id="interestedPositionLabel">Interested Position</label>
+<select id="interestedPositionInput" name="position" required>
+    <option disabled selected hidden>Positions</option>
     <option>1</option>
     <option>2</option>
     <option>3</option>
 </select>
-<label name="position">Phone Number</label>
-<input type="tel" placeholder="(000)000-0000">
+<label id="phoneNumberLabel" name="phone number">Phone Number</label>
+<input id="phoneNumberInput" type="tel" placeholder="(000)000-0000">
 
-<label name="position">Email</label>
-<input type="email" placeholder="example@domain.com">
+<label id="emailLabel" name="position">Email</label>
+<input id="emailInput" type="email" placeholder="example@domain.com">
 <br>
 
-<label>Street Address</label>
-<input type="text" placeholder="Street Address" required>
+<label id="streetAddressLabel">Street Address</label>
+<input type="text" id="streetAddressInput" placeholder="Street Address" required>
 
-<label>Apartment/Unit #</label>
-<input type="text" placeholder="Apartment/Unit #" required>
+<label id="apartmentNumberLabel">Apartment/Unit #</label>
+<input type="text" id="apartmentNumberInput" placeholder="Apartment/Unit #" required>
+
+<br>
+
+<label id="cityLabel">City</label>
+<input type="text" id="cityInput" placeholder="State" required>
+
+<label id="stateLabel">State</label>
+<select id="stateInput" name="state" required>
+    <option disabled selected hidden>State</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<label id="zipCodeLabel">Zip/Postal Code</label>
+<input type="text" id="zipCodeInput" placeholder="Zip/Postal Code" required>
 
 <br>
 
-<label>City</label>
-<input type="text" placeholder="State" required>
-
-<label>Zip/Postal Code</label>
-<input type="text" placeholder="Zip/Postal Code" required>
+<label id="volunteerReasonLabel">Why do you want to volunteer</label>
+<textarea id="volunteerReasonInput" placeholder="Why do you want to volunteer"></textarea>
 
 <br>
-<button>Submit</button>
+<button id="submitButton">Submit</button>
 
 
 
@@ -81,36 +98,6 @@
     <select name="day" required>
         <option disabled selected hidden class="date">Day</option>
         <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-        <option>23</option>
-        <option>24</option>
-        <option>25</option>
-        <option>26</option>
-        <option>27</option>
-        <option>28</option>
-        <option>29</option>
-        <option>30</option>
-        <option>31</option>
     </select>
 -->
 </body>

@@ -16,22 +16,265 @@
     border: 0;
     outline: 0;
 }
-
 .red {
     color: #FF0303;
 }
-
 .big-bold {
     font-size: 64;
     font-weight: 700px;
 }
-
 #volunteer {
     background-color: white;
     font-size: 17;
     font-family: 'Nunito', sans-serif;
 }
-
+#volunteerMainHeadingText {
+    position: absolute;
+    width: 1360px;
+    height: 320px;
+    left: 52px;
+    top: 420px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#volunteerHeading{
+    position: absolute;
+    width: 1360px;
+    height: 320px;
+    left: 52px;
+    top: 671px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    color: #FF0303;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+#volunteer label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;    
+}
+.nameInput {
+    width: 358px;
+    height: 44px;
+    left: 165px;
+    top: 1001px;
+}
+#volunteer input, #volunteer select, #volunteer textarea{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.04);
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+#firstNameInput {
+    left: 100px;
+    top: 1001px;
+}
+#firstNameLabel {
+    width: 145px;
+    height: 76px;
+    left: 102px;
+    top: 969px;        
+}
+#middleNameInput{
+    width: 358px;
+    height: 44px;
+    left: 541px;
+    top: 1001px
+}
+#middleNameLabel {
+    width: 179px;
+    height: 32px;
+    left: 541px;
+    top: 970px;
+}
+#lastNameInput {
+    left: 981px;
+    top: 1001px;
+}
+#lastNameLabel {
+    width: 179px;
+    height: 32px;
+    left: 981px;
+    top: 970px;
+}
+#monthInput{
+    width: 99px;
+    height: 43px;
+    left: 103px;
+    top: 1134px;
+}
+#dateLabel{
+    width: 145px;
+    height: 32px;
+    left: 108px;
+    top: 1096px;    
+}
+#dayInput{
+    width: 99px;
+    height: 43px;
+    left: 224px;
+    top: 1134px;
+}
+#yearInput{
+    width: 112px;
+    height: 43px;
+    left: 345px;
+    top: 1134px;
+}
+#interestedPositionInput{
+    width: 358px;
+    height: 43px;
+    left: 539px;
+    top: 1134px;
+}
+#interestedPositionLabel{
+    width: 172px;
+    height: 24px;
+    left: 540px;
+    top: 1100px;
+}
+#availableTimeAndDateInput{
+    width: 358px;
+    height: 44px;
+    left: 981px;
+    top: 1132px;
+}
+#availableTimeAndDateLabel{
+    width: 209px;
+    height: 32px;
+    left: 981px;
+    top: 1100px;
+}
+#phoneNumberInput{
+    width: 358px;
+    height: 44px;
+    left: 103px;
+    top: 1268px;
+}
+#phoneNumberLabel{
+    width: 145px;
+    height: 22px;
+    left: 103px;
+    top: 1236px;
+}
+#emailInput{
+    width: 358px;
+    height: 44px;
+    left: 542px;
+    top: 1268px;
+}
+#emailLabel{
+    width: 179px;
+    height: 32px;
+    left: 540px;
+    top: 1231px;
+}
+#streetAddressInput{
+    width: 520px;
+    height: 40px;
+    left: 100px;
+    top: 1401px;
+}
+#streetAddressLabel{
+    width: 145px;
+    height: 76px;
+    left: 100px;
+    top: 1369px;
+}
+#apartmentNumberInput{
+    width: 172px;
+    height: 40px;
+    left: 715px;
+    top: 1401px;
+}
+#apartmentNumberLabel{
+    width: 172px;
+    height: 40px;
+    left: 715px;
+    top: 1401px;    
+}
+#cityInput{
+    width: 366px;
+    height: 36px;
+    left: 973px;
+    top: 1405px;
+}
+#cityLabel{
+    width: 145px;
+    height: 42px;
+    left: 973px;
+    top: 1369px;
+}
+#stateInput{
+    width: 158px;
+    height: 38px;
+    left: 103px;
+    top: 1534px;
+}
+#stateLabel{
+    width: 147px;
+    height: 38px;
+    left: 103px;
+    top: 1496px;
+}
+#zipCodeInput{
+    width: 158px;
+    height: 38px;
+    left: 304px;
+    top: 1534px;
+}
+#zipCodeLabel{
+    width: 147px;
+    height: 38px;
+    left: 304px;
+    top: 1496px;
+}
+#volunteerReasonInput{
+    width: 1236px;
+    height: 294px;
+    left: 102px;
+    top: 1693px;    
+}
+#volunteerReasonLabel{
+    height: 40px;
+    width: 315px;
+    left: 103px;
+    top: 1643px;
+}
+#submitButton{
+    box-sizing: border-box;
+    padding: 3px 33px;
+    position: absolute;
+    width: 146px;
+    height: 37px;
+    left: 1125px;
+    top: 2057px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align:left;
+    justify-content: flext-start;
+}
 /*navigation bar*/
 #main-background-img-cropped img {
     fill-opacity: 40%;
@@ -47,8 +290,6 @@
     position: relative;
     overflow: hidden;
 }
-
-
 .nav-bar {
     background-color: white;
     width: 1440px;
@@ -60,7 +301,7 @@
     margin-bottom: 40px;
 }
 .nav-bar h3 {
-    position:relative;
+    position:absolute;
     font-weight: 900;
     left:64px;
     font-size:24px;
@@ -101,9 +342,13 @@
     border-radius: 8px;
     margin: 9px 16px;
     left: 32px;
-    top: -18px;
+    top: 18px;
 }
 .nav-bar ul li a:hover{
     color:#2678F3;
     background-color:#eee;
 }
+a:visited { 
+    text-decoration: none; 
+    color: inherit; 
+   }
