@@ -16,6 +16,9 @@
     border: 0;
     outline: 0;
 }
+label span{
+    color:red;
+}
 .red {
     color: #FF0303;
 }

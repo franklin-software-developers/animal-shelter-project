@@ -29,76 +29,66 @@
     <h2 id="volunteerHeading" class="red big-bold">Volunteer Today!</h2>
 </div>
 <!-- Label: "First Name" -->
-<label id="firstNameLabel">First Name</label>
+<label id="firstNameLabel">First Name<span>*</span></label>
 
 <!-- Input: Textbox, Placeholder: "First Name", Required -->
-<input id ="firstNameInput" class ="nameInput" type="text" placeholder="First Name" required>
+<input class = "required" id ="firstNameInput" class ="nameInput" type="text" placeholder="First Name" required>
 
 <!-- Repeat for rest; Look out for different input types -->
 <label id="middleNameLabel">Middle Name</label>
 <input id ="middleNameInput" type="text" class ="nameInput" placeholder="Middle Name">
 
-<label id="lastNameLabel">Last Name</label>
-<input id ="lastNameInput" type="text" class ="nameInput" placeholder="Last Name" required>
+<label id="lastNameLabel">Last Name<span>*</span></label>
+<input id ="lastNameInput" class = "required" type="text" class ="nameInput" placeholder="Last Name" required>
 <br>
 <div id="date-div">
-    <label id="dateLabel">Date of Birth</label>
-    <input id="monthInput" type="number" class="nameInput" placeholder="Month">
-    <input id="dayInput" type="number" class="nameInput" placeholder="Day">
-    <input id="yearInput" type="number" class="nameInput" placeholder="Year">
+    <label id="dateLabel">Date of Birth<span>*</span></label>
+    <input class = "required" id="monthInput" max="12" min="1" type="number" class="nameInput" placeholder="Month">
+    <input class = "required" id="dayInput" max="31" min="1" type="number" class="nameInput" placeholder="Day">
+    <input class = "required" id="yearInput" type="number" class="nameInput" placeholder="Year">
 </div>
 
-<label id="interestedPositionLabel">Interested Position</label>
+<label id="interestedPositionLabel">Interested Position<span>*</span></label>
 <select id="interestedPositionInput" name="position" required>
     <option disabled selected hidden>Positions</option>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
+    <option>Walking, playing, exercising dogs</option>
+    <option>Bathing and grooming</option>
+    <option>Training and behavior modification</option>
+    <option>Fundraising events</option>
+    <option>Cleaning/maintaining grounds</option>
 </select>
-<label id="phoneNumberLabel" name="phone number">Phone Number</label>
-<input id="phoneNumberInput" type="tel" placeholder="(000)000-0000">
+<label id="phoneNumberLabel" name="phone number">Phone Number<span>*</span></label>
+<input class = "required" id="phoneNumberInput" type="tel" placeholder="(000)000-0000">
 
-<label id="emailLabel" name="position">Email</label>
-<input id="emailInput" type="email" placeholder="example@domain.com">
+<label id="emailLabel" name="position">Email<span>*</span></label>
+<input class = "required" id="emailInput" type="email" placeholder="example@domain.com">
 <br>
 
-<label id="streetAddressLabel">Street Address</label>
-<input type="text" id="streetAddressInput" placeholder="Street Address" required>
+<label id="streetAddressLabel">Street Address<span>*</span></label>
+<input class = "required" type="text" id="streetAddressInput" placeholder="Street Address" required>
 
 <label id="apartmentNumberLabel">Apartment/Unit #</label>
 <input type="text" id="apartmentNumberInput" placeholder="Apartment/Unit #" required>
 
 <br>
 
-<label id="cityLabel">City</label>
-<input type="text" id="cityInput" placeholder="State" required>
+<label id="cityLabel">City<span>*</span></label>
+<input class = "required" type="text" id="cityInput" placeholder="State" required>
 
-<label id="stateLabel">State</label>
-<select id="stateInput" name="state" required>
-    <option disabled selected hidden>State</option>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
+<label id="stateLabel">State<span>*</span></label>
+<select class = "required" id="stateInput" name="state" required>
 </select>
-<label id="zipCodeLabel">Zip/Postal Code</label>
-<input type="text" id="zipCodeInput" placeholder="Zip/Postal Code" required>
+<label id="zipCodeLabel">Zip/Postal Code<span>*</span></label>
+<input class = "required" type="text" id="zipCodeInput" placeholder="Zip/Postal Code" required>
 
 <br>
 
-<label id="volunteerReasonLabel">Why do you want to volunteer</label>
+<label id="volunteerReasonLabel">Why do you want to volunteer<span>*</span></label>
 <textarea id="volunteerReasonInput" placeholder="Why do you want to volunteer"></textarea>
 
 <br>
-<button id="submitButton">Submit</button>
+<button onclick="clickSubmitButton()" id="submitButton">Submit</button>
 
-
-
-<!--might use:
-
-    <select name="day" required>
-        <option disabled selected hidden class="date">Day</option>
-        <option>1</option>
-    </select>
--->
+<script src="../js/volunteer.js"></script>
 </body>
 </html>
