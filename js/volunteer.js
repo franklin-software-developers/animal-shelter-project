@@ -4,13 +4,13 @@ let states = ["Alabama","Alaska","Arizona",'Arkansas','California','Colorado','C
 //all form answers that is required to be filled out
 let requiredField = document.querySelectorAll('[class="required"]');
 let filledOut = false;
+let feedbackForm = document.getElementById("feedbackForm");
 //listing all the states for state dropdown
 for (let i=0; i < 50; i++) {
     let stateOptions = document.createElement("option");
     stateOptions.innerHTML=states[i];
     stateInput.appendChild(stateOptions);
 }
-
 //after clicking submit, it will warn the user if not all the required question isn't filled out. Otherwise, it just thanks the user for volunteering
 let clickSubmitButton = function () {
     filledOut = true;
@@ -23,5 +23,12 @@ let clickSubmitButton = function () {
         alert("Please fill out the entire form");
     } else {
         alert("Thank you for volunteering. See you soon!");
+    }
+}
+let submitFeedback = function () {
+    if(feedbackForm.value.length == 0){
+        alert("No questions or comments typed");
+    } else {
+        alert("Sent, thank you!");
     }
 }

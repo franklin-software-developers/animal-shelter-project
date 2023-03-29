@@ -16,6 +16,10 @@
     border: 0;
     outline: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 label span{
     color:red;
 }
@@ -26,6 +30,7 @@ label span{
     font-size: 64;
     font-weight: 700px;
 }
+
 #volunteer {
     background-color: white;
     font-size: 17;
@@ -278,17 +283,20 @@ label span{
     text-align:left;
     justify-content: flext-start;
 }
+
 #main-background-img-cropped img {
     fill-opacity: 40%;
     position: relative;
     z-index: -2;
     width: 1731px;
     left:-86px;
+    overflow-x: hidden;
 }
 #main-background-img-cropped {
     z-index: -1;
     width: 1440px;
     height: 791px;
+    overflow-x: hidden;
     position: relative;
     overflow: hidden;
 }
@@ -339,6 +347,131 @@ label span{
     color:#2678F3;
     background-color:#eee;
 }
+
+#volunteer footer {
+    top:1200px;
+    height: 533px;
+    width: 100%;
+    gap: 32px;
+    position: relative;
+    border-radius: 0px;
+    padding: 48px 49px 48px 45px;
+    background-color:#EFF6FF;
+    color:#1D4ED8;
+    font-family: Work Sans;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+#volunteer p{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 16px;
+    width: 465px;
+    left: 122px;
+    top: 100px;
+    border-radius: nullpx;
+    position:absolute;
+}
+#volunteer footer label {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 162px;
+    left: 122px;
+    position:absolute;
+
+}
+#volunteer-footer-title {
+    position:absolute;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+    height: 16px;
+    width: 465px;
+    left: 122px;
+    top: 48px;
+    border-radius: relative;
+}
+#volunteer footer textarea{
+    height: 141px;
+    width: 503px;
+    left: 122px;
+    top: 0px;
+    border-radius: 0px;
+    top: 212px;
+    border-width:0;
+    background-color:#D9D9D9;
+}
+#footer-link-title{
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    left:56px;
+    top: 56px;
+    position: absolute;
+}
+#footer-submit{
+    left: 122px;
+    top: 399px;
+    border-radius: 0px;
+    padding: 20px;
+    width: 503px;
+    height: 56px;
+    position:absolute;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1D4ED8;
+    background-color: white;
+    border: 2px dashed #1D4ED8;
+}
+#footer-submit:hover{
+    background-color: #DDD;
+}
+#link-footer{
+    position: absolute;
+    left:830px;
+    top:115px;
+    background-color:#DBEAFE;
+    width:503px;
+    height:372px;
+}
+#footer-list{
+    list-style-type:none;
+    width:800px;
+    position:absolute;
+    left:56px;
+    top:100px;
+}
+#link-social-media{
+    list-style-type:none;
+    width:800px;
+    position:absolute;
+    left:56px;
+    top:270px;
+}
+#footer-list li, #link-social-media li{
+    display: inline-block;
+    padding-right:230px;
+    padding-top:20px;
+}
+a {
+    text-decoration: none;
+}
 .nav-bar ul li a{
     font-size: 20;
     font-family: 'Nunito', sans-serif;
@@ -359,5 +492,5 @@ label span{
 }
 a:visited { 
     text-decoration: none; 
-    color: inherit; 
+    color: inherit;
 }

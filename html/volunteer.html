@@ -5,8 +5,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">    
 </head>
 <body>
+<div id="content">
 <div class="nav-bar">
     <h3 class="nav-h3">FSD Animal Shelter</h3>
     <ul class="nav-h3">
@@ -87,7 +91,28 @@
 
 <br>
 <button onclick="clickSubmitButton()" id="submitButton">Submit</button>
-
-<script src="../js/volunteer.js"></script>
+</div>
+<footer>
+    <h2 id="volunteer-footer-title">FSD Shelter</h2>
+    <p>Saving animal, one home at a time</p>
+    <label>Questions or comments</label>
+    <textarea id="feedbackForm"></textarea>
+    <button onclick="submitFeedback()" id="footer-submit">Submit</button>
+    <div id="link-footer">
+        <h3 id="footer-link-title">Site Links</h3>
+        <ul id="footer-list">
+            <li><a style="padding-right:60px;" href ="index.html">Home</a></li>
+            <li><a href ="adopt.html">Adopt</a></li>
+            <li><a href ="team.html">Our team</a></li>
+            <li><a href ="volunteer.html">Volunteer</a></li>
+        </ul>
+        <ul id="link-social-media">
+            <li><a style="padding-right:7px;" href ="#">Instagram</a></li>
+            <li><a href ="#">Youtube</a></li>
+        </ul>
+    </div>
+    
+</footer>
 </body>
+<script src="../js/volunteer.js"></script>
 </html>
