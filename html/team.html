@@ -4,9 +4,69 @@
         <title>Animal Shelter</title>
         <meta charset = "utf-8">
         <link rel="stylesheet" href="../styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+        <style>
+            html {
+                box-sizing: border-box;
+                font-family:'Nunito';
+            }
+            
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+            
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            
+            .container {
+                padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .title {
+                color: grey;
+            }
+            
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #202020;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+            
+
+            .button:hover {
+                background-color: #555;
+                color: white;
+            }
+            </style>
     </head>
     <!--Navigation Bar-->
     <div style="display:flex; justify-content:space-between; width:100%;" class="nav-bar">
@@ -22,40 +82,115 @@
     </div>
     <h1>Our Team</h1>
     <h3>Team Members</h3>
-    <img alt = "Ethan Tran" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Ethan Tran</h7>
-    <h10>Dog Donor</h10>
-    <h13>Short Bio:</h13>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Ethan Tran</h2>
+                    <p class="title">Dog Donor</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Nuri Kim</h2>
+                    <p class="title">Cat Caterer</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/nurikimchi" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+            <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Patrick Liang</h2>
+              <p class="title">Rabbit Rescuer</p>
+              <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+    </div>
 
-    <img alt = "Nuri Kim" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Nuri Kim</h7>
-    <h10>Cat Caterer</h10>
-    <h13>Short Bio:</h13>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Isaiah Koh</h2>
+                    <p class="title">Lion Leader</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/CostKoh" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
+      
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Nina Dong</h2>
+                    <p class="title">Turtle Tank</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/Caramel4764" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Omar Sadata</h2>
+                    <p class="title">Janitorial Services</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/ohmrr" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <img alt = "Patrick Liang" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Patrick Liang</h7>
-    <h10>Rabbit Rescuer</h10>
-    <h13>Short Bio:</h13>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Khloe Nguyen</h2>
+                    <p class="title">Mouse Master</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/khloeNguyen" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
 
-    <img alt = "Isaiah Koh" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Isaiah Koh</h7>
-    <h10>Lion Leader</h10>
-    <h13>Short Bio:</h13>
-
-    <img alt = "Nina Dong" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Nina Dong</h7>
-    <h10>Turtle Tank</h10>
-    <h13>Short Bio:</h13>
-
-    <img alt = "Khloe Nguyen" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Khloe Nguyen</h7>
-    <h10>Mouse Master</h10>
-    <h13>Short Bio:</h13>
-    
-    <img alt = "Omar Sadat" src = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-    <h7>Omar Sadat</h7>
-    <h10>Janitorial Services</h10>
-    <h13>Short Bio:</h13>
+        <div class="column">
+            <div class="card">
+                <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Jaden Chung</h2>
+                    <p class="title">Operation Road Blocker</p>
+                    <p>Short Bio: Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a style="color:white;" class="button" href="https://github.com/jadenkiu" target="_blank">Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
 <!-- SITEWIDE: Footer -->
 <footer style="background-color:black; color:white; position:sticky; top:100%; left:0;width:100%; font-family:Nunito; padding:6px;"class="footer">
